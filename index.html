@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h1 class="card-title">Weather App</h1>
+            <p class="card-subtitle mb-2 text-muted" id="para">Now you can search weather of your city</p>
+ 
+ 
+            <div class="w-form">
+             <form>
+              <div class="mb-3">
+                  <label for="city" class="form-label">City</label>
+                  <input type="city" class="form-control" id="city" placeholder="Enter your City..">
+                </div>
+ 
+                <div class="mb-3">
+                 <label for="country" class="form-label">Country</label>
+                 <input type="country" class="form-control" id="country" placeholder="Enter your Country..">
+                 <div class="form-text">Type country as ISO-3166 formet.</div>
+               </div>
+               
+               <button class="btn btn-primary">Get weather</button>
+             </form>
+         </div>
+          </div>
+           
+
+        
+       </div> 
+      
+       <div class="row pb-3 mt-3">
+        <div class="col-md-6 mx-auto">
+             <div class="card">
+                <div class="card-header text-center" id="w-city">
+                  
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item text-center" id="w-temp">
+                      <img src="" id="w-icon">
+                      <div class="text-center" id="w-feels">Cloudy</div>
+                 </li> 
+                  <li class="list-group-item" id="w-tempareture">Temperature(Cel):14.12</li>
+                  <li class="list-group-item" id="w-pressure">Pressure(hpa):1019</li>
+                  <li class="list-group-item" id="w-humidity">Humidity(%):66</li>
+                </ul>
+              </div>
+
+              
+        </div>
+    </div>
+    </div>
+  
+    <script src="main.js"></script>
+</body>
+</html>
