@@ -8,8 +8,12 @@ function searchWeather() {
     .then((data) => displayWeather(data));
   document.getElementById('city').value = '';
 }
-const setInnerText = (id, temItem) => {
-  document.getElementById(id).innerText = temItem;
+const setInnerText = (id, tempItem) => {
+  if (id == 'temp') {
+    document.getElementById(id).innerHTML = `${tempItem} &deg;C`;
+  } else {
+    document.getElementById(id).innerText = tempItem;
+  }
 };
 const displayWeather = (temp) => {
   setInnerText('city-name', temp.name);
